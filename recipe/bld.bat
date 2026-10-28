@@ -4,7 +4,7 @@ if errorlevel 1 exit 1
 cd build
 if errorlevel 1 exit 1
 
-cmake -G "NMake Makefiles" ^
+cmake %CMAKE_ARGS% -G "NMake Makefiles" ^
          -DCMAKE_BUILD_TYPE:STRING=RELEASE ^
          -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
          -DCMAKE_INSTALL_PREFIX:PATH=%LIBRARY_PREFIX% ^
